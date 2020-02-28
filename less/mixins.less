@@ -1,0 +1,29 @@
+.signup-btn(@ocean, @lake-blue) {
+    padding: 10px 5px 10px 5px;
+    color: @ocean;
+    background-color: @lake-blue;
+    width: 100px; 
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    border: 1px solid @ocean;
+    &:hover {
+        color: @lake-blue;
+        background-color: @ocean;
+    }
+    &:active {
+        border-color: @lake-blue;  
+    }
+}
+
+
+.setup-flex(@direction, @jstfy){
+    display: inline;
+    flex-direction: @direction;
+    justify-content: @jstfy;
+}
+.phoneflex {
+    width: 99%;
+    margin: 2%;
+    padding: 1%;
+}

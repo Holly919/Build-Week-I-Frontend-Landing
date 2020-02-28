@@ -1,3 +1,8 @@
+.phoneflex {
+  width: 99%;
+  margin: 2%;
+  padding: 1%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -125,4 +130,84 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Neuton';
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Candal';
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header .navigation {
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #F1FCFC;
+  padding-top: 1%;
+}
+header .navigation h1 {
+  text-align: center;
+}
+header .navigation .navbar {
+  display: inline;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 65%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  header .navigation .navbar {
+    width: 80%;
+    padding-bottom: 5px;
+  }
+}
+header .navigation .navbar a {
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+}
+header .navigation .navbar a:hover {
+  text-decoration: underline;
+}
+header .navigation .top-image {
+  display: inline;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  header .navigation .top-image {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+  }
 }

@@ -1,0 +1,47 @@
+header {
+    .navigation {
+        .setup-flex(column, center);
+        align-items: center;
+        width: 100%; 
+        background-color: @pale-sky;
+        padding-top: 1%;
+
+        h1 {
+            text-align: center
+        }
+            
+               
+        .navbar {
+           .setup-flex(row,space-around);
+            width: 65%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+           
+            @media @phone {
+                width: 80%;
+                padding-bottom: 5px;
+            }
+    
+                a {
+                    font-size: 1.6rem;
+                    color: black;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+               }
+           
+                
+                .top-image {
+                    display: inline;
+                    justify-content: center;
+                    @media @phone {
+                    width: 100%;
+                    margin: auto;
+                    padding: auto
+                }    
+      } //top-image
+    
+   } //navigation
+} //header
