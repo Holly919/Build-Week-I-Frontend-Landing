@@ -166,19 +166,22 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  background-color: #F1FCFC;
+}
 header .navigation {
   display: inline;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #F1FCFC;
   padding-top: 1%;
 }
 header .navigation h1 {
   text-align: center;
+  color: #142850;
 }
-header .navigation .navbar {
+header .navigation nav {
   display: inline;
   flex-direction: row;
   justify-content: space-around;
@@ -187,27 +190,95 @@ header .navigation .navbar {
   padding-bottom: 10px;
 }
 @media (max-width: 500px) {
-  header .navigation .navbar {
+  header .navigation nav {
     width: 80%;
     padding-bottom: 5px;
   }
 }
-header .navigation .navbar a {
-  font-size: 1.6rem;
+header .navigation nav a {
+  font-size: 1.8rem;
   color: black;
   text-decoration: none;
 }
-header .navigation .navbar a:hover {
+header .navigation nav a:hover {
   text-decoration: underline;
 }
-header .navigation .top-image {
+header .top-image {
   display: inline;
   justify-content: center;
 }
 @media (max-width: 500px) {
-  header .navigation .top-image {
-    width: 100%;
+  header .top-image {
+    width: 90%;
     margin: auto;
     padding: auto;
+  }
+}
+.container .img-content {
+  width: 100%;
+}
+.container img {
+  width: 90%;
+  margin: 1%;
+}
+.container .top-content {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .container .top-content {
+    width: 99%;
+    margin: 2%;
+    padding: 1%;
+  }
+}
+.container .top-content img {
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .container .top-content img {
+    width: 99%;
+    padding: 1%;
+  }
+}
+.container .top-content .btn {
+  border: 1px solid #F1FCFC;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #00802B;
+}
+.container .top-content .btn:hover {
+  background-color: #F1FCFC;
+  color: #142850;
+}
+.container .CTA {
+  padding-top: 30px;
+  border-top: 2px dashed #79BAC1;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .CTA {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 2%;
+    padding: 1%;
+  }
+}
+.container .CTA .Sign-Up {
+  width: 30%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .container .CTA .Sign-Up {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 2%;
+    padding: 1%;
   }
 }
