@@ -1,49 +1,57 @@
 .container {
 
-    .img-content {
-        width: 100%;
-      }
-      img {
-        width: 90%;
-        margin: 1%;
-      }
+    .top-content {
+        
+
     
-     .top-content {
+        .top-image {
+            border-radius: 10px;
+            background-color: @pale-sky;
+            @media @phone {
+            width: 100%;
+            margin: auto;
+            padding: auto
+        }
+    }
+    
+     .intro {
         width: 75%;
         margin: 0 auto 30px;
+        
     
         @media @phone {
           .phoneflex;
         }
     
-        img {
+        .working-img {
           border-radius: 10px;
           @media @phone {
-          width: 99%;
-          padding: 1%;
-          }
+            width: 100%;
+            margin: auto;
+            padding: auto
         }
-      
-
+      } 
+    
       .btn {
-        border: 1px solid @pale-sky;
+        border: 1px solid @seafoam;
         padding: 10px;
         border-radius: 10px;
         color: white;
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: center;
         background-color: @street-sign;
-        
-      }
+     }
       .btn:hover {
-        background-color: @pale-sky;
+        background-color: @ocean;
         color: @lake-blue;
       }
-    } //top-content
+    } 
+ } //top-content
 
       .CTA {
+          background-color: @seafoam;
         padding-top: 30px;
-        border-top: 2px dashed @ocean;
+        border-top: 2px double @ocean;
         display: flex;
         justify-content: space-between;
     
@@ -69,4 +77,4 @@
 
 
 
-} //content
+} //container

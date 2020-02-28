@@ -142,14 +142,16 @@ body {
   font-family: 'Neuton';
 }
 h1,
-h2,
+h2 {
+  font-family: 'Laila', bold, bold;
+}
 h3,
 h4,
 h5 {
-  font-family: 'Candal';
+  font-family: 'Yeon Sung';
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -176,6 +178,7 @@ header .navigation {
   align-items: center;
   width: 100%;
   padding-top: 1%;
+  border-bottom: 2px solid #79BAC1;
 }
 header .navigation h1 {
   text-align: center;
@@ -203,60 +206,66 @@ header .navigation nav a {
 header .navigation nav a:hover {
   text-decoration: underline;
 }
-header .top-image {
-  display: inline;
-  justify-content: center;
+.footer {
+  width: 100%;
+  border-top: 2px  ocean;
+  background: #142850;
+}
+.footer p {
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.container .top-content .top-image {
+  border-radius: 10px;
+  background-color: #F1FCFC;
 }
 @media (max-width: 500px) {
-  header .top-image {
-    width: 90%;
+  .container .top-content .top-image {
+    width: 100%;
     margin: auto;
     padding: auto;
   }
 }
-.container .img-content {
-  width: 100%;
-}
-.container img {
-  width: 90%;
-  margin: 1%;
-}
-.container .top-content {
+.container .top-content .intro {
   width: 75%;
   margin: 0 auto 30px;
 }
 @media (max-width: 500px) {
-  .container .top-content {
+  .container .top-content .intro {
     width: 99%;
     margin: 2%;
     padding: 1%;
   }
 }
-.container .top-content img {
+.container .top-content .intro .working-img {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .container .top-content img {
-    width: 99%;
-    padding: 1%;
+  .container .top-content .intro .working-img {
+    width: 100%;
+    margin: auto;
+    padding: auto;
   }
 }
-.container .top-content .btn {
-  border: 1px solid #F1FCFC;
+.container .top-content .intro .btn {
+  border: 1px solid #6BA8A9;
   padding: 10px;
   border-radius: 10px;
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   background-color: #00802B;
 }
-.container .top-content .btn:hover {
-  background-color: #F1FCFC;
+.container .top-content .intro .btn:hover {
+  background-color: #79BAC1;
   color: #142850;
 }
 .container .CTA {
+  background-color: #6BA8A9;
   padding-top: 30px;
-  border-top: 2px dashed #79BAC1;
+  border-top: 2px double #79BAC1;
   display: flex;
   justify-content: space-between;
 }
