@@ -1,12 +1,17 @@
 header {
-    background-color: @pale-sky;
-
-    .navigation {
-        .setup-flex(column, center);
-        align-items: center;
-        width: 100%; 
-        padding-top: 1%;
-        border-bottom: 2px solid @ocean;
+    .flex-layout(center, center);
+        flex-direction: column;
+        align-content: space-between;
+        margin-bottom: 30px;
+    
+        // .setup-flex(row, space-between);
+        // align-items: center;
+        // width: 100%; 
+        // padding-top: 1%;
+        border-bottom: 2px solid @pale-sky;
+        @media @phone{
+            flex-direction: column;
+        }
 
         h1 {
             text-align: center;
@@ -15,7 +20,7 @@ header {
             
                
         nav {
-           .setup-flex(row,space-around);
+            .setup-flex(row,space-between);
             width: 65%;
             padding-top: 10px;
             padding-bottom: 10px;
@@ -26,7 +31,9 @@ header {
             }
     
                 a {
+                    
                     font-size: 1.8rem;
+                    text-align: center;
                     color: black;
                     text-decoration: none;
                 }
@@ -34,5 +41,4 @@ header {
                     text-decoration: underline;
                 }
                }
-           } //navigation
 } //header

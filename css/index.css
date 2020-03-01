@@ -140,10 +140,11 @@ html {
 html,
 body {
   font-family: 'Neuton';
+  background-color: #d9e6f2;
 }
 h1,
 h2 {
-  font-family: 'Laila', bold, bold;
+  font-family: 'Laila', bold;
 }
 h3,
 h4,
@@ -159,6 +160,9 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h4 {
+  font-size: 2.5rem;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -169,41 +173,44 @@ p {
   margin: 0 auto;
 }
 header {
-  background-color: #F1FCFC;
-}
-header .navigation {
-  display: inline;
-  flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding-top: 1%;
-  border-bottom: 2px solid #79BAC1;
+  flex-direction: column;
+  align-content: space-between;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #F1FCFC;
 }
-header .navigation h1 {
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}
+header h1 {
   text-align: center;
   color: #142850;
 }
-header .navigation nav {
-  display: inline;
+header nav {
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 65%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 @media (max-width: 500px) {
-  header .navigation nav {
+  header nav {
     width: 80%;
     padding-bottom: 5px;
   }
 }
-header .navigation nav a {
+header nav a {
   font-size: 1.8rem;
+  text-align: center;
   color: black;
   text-decoration: none;
 }
-header .navigation nav a:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 .footer {
@@ -217,9 +224,15 @@ header .navigation nav a:hover {
   font-size: 1.6rem;
   padding: 20px;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
 .container .top-content .top-image {
   border-radius: 10px;
-  background-color: #F1FCFC;
 }
 @media (max-width: 500px) {
   .container .top-content .top-image {
@@ -241,6 +254,8 @@ header .navigation nav a:hover {
 }
 .container .top-content .intro .working-img {
   border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
 }
 @media (max-width: 500px) {
   .container .top-content .intro .working-img {
@@ -285,6 +300,51 @@ header .navigation nav a:hover {
 @media (max-width: 500px) {
   .container .CTA .Sign-Up {
     display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 2%;
+    padding: 1%;
+  }
+}
+.tmembers p {
+  height: 100%;
+  width: 40%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.tmembers .PM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tmembers .TM1,
+.tmembers .TM2 {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.tmembers .TM3,
+.tmembers .TM4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.tmembers .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .tmembers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 99%;
     margin: 2%;
