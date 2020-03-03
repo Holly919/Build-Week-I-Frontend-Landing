@@ -145,11 +145,13 @@ body {
 h1,
 h2 {
   font-family: 'Laila', bold;
+  color: #142850;
 }
 h3,
 h4,
 h5 {
   font-family: 'Yeon Sung';
+  color: #142850;
 }
 h1 {
   font-size: 5rem;
@@ -168,7 +170,6 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -177,8 +178,9 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  align-content: space-between;
+  align-content: space-around;
   margin-bottom: 30px;
+  width: 100%;
   border-bottom: 2px solid #F1FCFC;
 }
 @media (max-width: 500px) {
@@ -186,31 +188,34 @@ header {
     flex-direction: column;
   }
 }
-header h1 {
+header .navigation {
+  width: 50%;
+}
+header .navigation h1 {
   text-align: center;
   color: #142850;
 }
-header nav {
+header .navigation nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 65%;
+  justify-content: space-around;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 @media (max-width: 500px) {
-  header nav {
+  header .navigation nav {
     width: 80%;
     padding-bottom: 5px;
   }
 }
-header nav a {
+header .navigation nav a {
   font-size: 1.8rem;
   text-align: center;
   color: black;
   text-decoration: none;
 }
-header nav a:hover {
+header .navigation nav a:hover {
   text-decoration: underline;
 }
 .footer {
@@ -228,10 +233,16 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
+  width: 100%;
+}
+.container .top-content {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .container .top-content .top-image {
+  padding: 0;
+  width: 100%;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
@@ -243,7 +254,9 @@ header nav a:hover {
 }
 .container .top-content .intro {
   width: 75%;
-  margin: 0 auto 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .container .top-content .intro {
@@ -252,19 +265,7 @@ header nav a:hover {
     padding: 1%;
   }
 }
-.container .top-content .intro .working-img {
-  border-radius: 10px;
-  flex-direction: row;
-  justify-content: center;
-}
-@media (max-width: 500px) {
-  .container .top-content .intro .working-img {
-    width: 100%;
-    margin: auto;
-    padding: auto;
-  }
-}
-.container .top-content .intro .btn {
+.container .top-content .intro .button {
   border: 1px solid #6BA8A9;
   padding: 10px;
   border-radius: 10px;
@@ -273,19 +274,37 @@ header nav a:hover {
   text-align: center;
   background-color: #00802B;
 }
-.container .top-content .intro .btn:hover {
+.container .top-content .intro .button:hover {
   background-color: #79BAC1;
   color: #142850;
 }
-.container .CTA {
+.container .top-content .intro .w-img {
+  display: flex;
+  justify-content: center;
+}
+.container .top-content .intro .w-img .working-img {
+  padding: 0;
+  width: 50%;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .container .top-content .intro .w-img .working-img {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+  }
+}
+.container .top-content .CTA {
   background-color: #6BA8A9;
   padding-top: 30px;
+  margin: 0;
+  width: 100%;
   border-top: 2px double #79BAC1;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .container .CTA {
+  .container .top-content .CTA {
     display: flex;
     flex-direction: column;
     width: 99%;
@@ -293,12 +312,12 @@ header nav a:hover {
     padding: 1%;
   }
 }
-.container .CTA .Sign-Up {
+.container .top-content .CTA .Sign-Up {
   width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
-  .container .CTA .Sign-Up {
+  .container .top-content .CTA .Sign-Up {
     display: flex;
     flex-direction: column;
     width: 99%;
@@ -306,42 +325,69 @@ header nav a:hover {
     padding: 1%;
   }
 }
-.tmembers p {
+.about-ctn {
+  display: flex;
+}
+.about-ctn .tmembers .PM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-ctn .tmembers .TM1,
+.about-ctn .tmembers .TM2 {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .about-ctn .tmembers .TM1,
+  .about-ctn .tmembers .TM2 {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 2%;
+    padding: 1%;
+  }
+}
+.about-ctn .tmembers .TM3,
+.about-ctn .tmembers .TM4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .about-ctn .tmembers .TM3,
+  .about-ctn .tmembers .TM4 {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 2%;
+    padding: 1%;
+  }
+}
+.about-ctn .tmembers .TM3 p,
+.about-ctn .tmembers .TM4 p {
   height: 100%;
   width: 40%;
   text-align: center;
   margin-bottom: 30px;
 }
-.tmembers .PM {
+.about-ctn .contact {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.tmembers .TM1,
-.tmembers .TM2 {
-  display: flex;
-  justify-content: row;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 30px;
-}
-.tmembers .TM3,
-.tmembers .TM4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 30px;
-}
-.tmembers .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-bottom: 20px;
 }
 @media (max-width: 500px) {
-  .tmembers {
+  .about-ctn .contact {
     display: flex;
     justify-content: center;
     align-items: center;

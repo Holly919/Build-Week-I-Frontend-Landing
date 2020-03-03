@@ -1,63 +1,75 @@
 .container {
     .setup-flex(column, center);
-    align-items: stretch;
+    //align-items: stretch;
     width: 100%; 
 
     .top-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
          
         .top-image {
+            padding: 0;
+            width: 100%;
             border-radius: 10px;
             @media @phone {
-            width: 100%;
-            margin: auto;
-            padding: auto;
+                width: 100%;
+                margin: auto;
+                padding: auto;
         }
     }
     
      .intro {
         width: 75%;
-        margin: 0 auto 30px;
-        
-    
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
         @media @phone {
           .phoneflex;
         }
+
+        .button {
+        
+            border: 1px solid @seafoam;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            background-color: @street-sign;
+         }
+          .button:hover {
+            background-color: @ocean;
+            color: @lake-blue;
+          }
+
+          .w-img {
+
+          display: flex;
+          justify-content: center;
     
         .working-img {
-          border-radius: 10px;
-          flex-direction: row;
-          justify-content: center;
-          @media @phone {
-            width: 100%;
-            margin: auto;
-            padding: auto
-        }
-      } 
-    
-      .btn {
-        border: 1px solid @seafoam;
-        padding: 10px;
-        border-radius: 10px;
-        color: white;
-        font-size: 3rem;
-        text-align: center;
-        background-color: @street-sign;
-     }
-      .btn:hover {
-        background-color: @ocean;
-        color: @lake-blue;
-      }
-    } 
+            padding: 0;
+            width: 50%;
+            border-radius: 10px;
+            @media @phone {
+                width: 100%;
+                margin: auto;
+                padding: auto;
+            }
+      } //w-img 
+    } //intro 
  } //top-content
 
       .CTA {
           background-color: @seafoam;
-        padding-top: 30px;
-        border-top: 2px double @ocean;
-        display: flex;
-        justify-content: space-between;
-        
-    
+          padding-top: 30px;
+          margin: 0;
+          width: 100%;
+          border-top: 2px double @ocean;
+          display: flex;
+          justify-content: space-between;
+              
          @media @phone {
             display: flex;
             flex-direction: column;
@@ -72,18 +84,15 @@
             flex-direction: column;
             .phoneflex;
           }
-                       
         }
-      } //CTA
+    }
+    } //CTA
 } //container
 
-.tmembers {
+.about-ctn {
+    display: flex;
 
-    p {
-        .box-size(100%, 40%);
-        text-align: center;
-        margin-bottom: 30px;
-    }
+.tmembers {
 
     .PM {
         .flex-layout(center, center);
@@ -91,29 +100,74 @@
     }
 
     .TM1, .TM2 {
+       
+    //  padding-top: 30px;
+    //  margin: 0;
+    //  width: 100%;
+    //  //border-top: 2px double @ocean;
+    //  display: flex;
+    //  justify-content: space-between;
+         
+    // @media @phone {
+    //    display: flex;
+    //    flex-direction: column;
+    //    .phoneflex;
+    //  }
+        //    width: 45%;
+        //     margin-bottom: 30px;
+        //     @media @phone {
+        //       display: flex;
+        //       flex-direction: column;
+        //       .phoneflex;
+        //     }
+                         
+          
+        
+
+
         .flex-layout(row, center);
         flex-direction: column;
         margin-bottom: 30px;
+        width: 45%;
+          margin-bottom: 30px;
+          @media @phone {
+            display: flex;
+            flex-direction: column;
+            .phoneflex;
+        }
     }
 
+        
+    
     .TM3, .TM4 {
         .flex-layout(center, center);
         flex-direction: column;
         margin-bottom: 30px;
+        width: 45%;
+        margin-bottom: 30px;
+          @media @phone {
+            display: flex;
+            flex-direction: column;
+            .phoneflex;
 
     }
 
-    .contact {
-        .flex-layout(center, center);
-        flex-direction: column;
+    p {
+        .box-size(100%, 40%);
+        text-align: center;
+        margin-bottom: 30px;
     }
-
-    @media @phone {
-
-        .flex-layout(center, center);
-        flex-direction: column;
-        .phoneflex;
-    }
-
-
+}
 } //tmembers
+
+.contact {
+    .flex-layout(center, center);
+    flex-direction: column;
+    margin-bottom: 20px;
+    @media @phone {
+    .flex-layout(center, center);
+    flex-direction: column;
+    .phoneflex;
+    }
+}
+} //about-ctn

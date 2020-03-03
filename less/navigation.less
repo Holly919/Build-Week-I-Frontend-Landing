@@ -1,18 +1,18 @@
 header {
     .flex-layout(center, center);
         flex-direction: column;
-        align-content: space-between;
+        align-content: space-around;
         margin-bottom: 30px;
-    
-        // .setup-flex(row, space-between);
-        // align-items: center;
-        // width: 100%; 
-        // padding-top: 1%;
+        width:100%;
         border-bottom: 2px solid @pale-sky;
         @media @phone{
             flex-direction: column;
         }
 
+        .navigation {
+            width: 50%;
+
+        
         h1 {
             text-align: center;
             color: @lake-blue;
@@ -20,8 +20,8 @@ header {
             
                
         nav {
-            .setup-flex(row,space-between);
-            width: 65%;
+            .setup-flex(row,space-around);
+            width: 100%;
             padding-top: 10px;
             padding-bottom: 10px;
            
@@ -41,4 +41,5 @@ header {
                     text-decoration: underline;
                 }
                }
+            } //navigation
 } //header
