@@ -86,7 +86,7 @@
 
 
     .working-img {
-        margin: 1px;
+        margin: 0 0 5px;
 
         .w-img {
 
@@ -114,6 +114,9 @@
      
     .tmembers {
         
+        h3, h4{
+            font-family: @h12-font;
+        }
         .PM {
             .flex-layout(center, center);
             flex-direction: column;
@@ -125,6 +128,7 @@
         //border-top: 2px double @ocean;
         display: flex;
         justify-content: space-around;
+
     
          @media @phone {
             display: flex;
@@ -178,12 +182,18 @@
 } //about-ctn
 
 .contact {
+    border-top: 2px double @pale-sky;
+    background-color: @lake-blue;
     text-align: center;
-    margin-bottom: 1%;
+    padding-top: 10px;
+    margin: 15px 0;
 
     @media @phone {
     .flex-layout(center, center);
     flex-direction: column;
     .phoneflex;
     }
+    p, h4 {
+        color: white;
+       }
 }
