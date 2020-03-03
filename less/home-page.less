@@ -1,15 +1,10 @@
 .container {
-    .setup-flex(column, center);
-    //align-items: stretch;
-    width: 100%; 
-
+    
     .top-content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-         
+        // display: flex;
+        // flex-direction: column;
+                 
         .top-image {
-            padding: 0;
             width: 100%;
             border-radius: 10px;
             @media @phone {
@@ -20,6 +15,7 @@
     }
     
      .intro {
+        .setup-flex(column, center);
         width: 75%;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -27,147 +23,169 @@
         @media @phone {
           .phoneflex;
         }
+    } //intro 
+    } //top-content
 
-        .button {
-        
-            border: 1px solid @seafoam;
+    .sign-up-btn {
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            width: 20%;
+            border: 3px double @seafoam;
             padding: 10px;
             border-radius: 10px;
             color: white;
             font-size: 3rem;
             text-align: center;
             background-color: @street-sign;
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                .phoneflex;
+              }
          }
-          .button:hover {
+          .btn:hover {
             background-color: @ocean;
             color: @lake-blue;
           }
+    } //sign-up-btn
 
-          .w-img {
-
-          display: flex;
-          justify-content: center;
     
-        .working-img {
-            padding: 0;
-            width: 50%;
-            border-radius: 10px;
-            @media @phone {
-                width: 100%;
-                margin: auto;
-                padding: auto;
-            }
-      } //w-img 
-    } //intro 
- } //top-content
 
       .CTA {
           background-color: @seafoam;
-          padding-top: 30px;
+          padding-top: 30px 10px 20px 10px;
           margin: 0;
-          width: 100%;
+          width: 95%;
           border-top: 2px double @ocean;
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
               
          @media @phone {
             display: flex;
             flex-direction: column;
             .phoneflex;
           }
+
+          h3 {
+              text-align: center;
+          }
     
-        .Sign-Up {
+        .get-inv {
           width: 30%;
-          margin-bottom: 30px;
+          margin: 20px;
           @media @phone {
             display: flex;
             flex-direction: column;
             .phoneflex;
           }
         }
-    }
     } //CTA
-} //container
+
+    
+
+
+    .working-img {
+        margin-top: 0.5%;
+
+        .w-img {
+
+            display: flex;
+            justify-content: center;
+            
+      
+          .working-img {
+              padding: 0;
+              width: 50%;
+              border-radius: 10px;
+              @media @phone {
+                  width: 100%;
+                  margin: auto;
+                  padding: auto;
+              }
+        }  
+      } 
+    } //working-img
+
+    }//container
+
 
 .about-ctn {
-    display: flex;
-
-.tmembers {
-
-    .PM {
-        .flex-layout(center, center);
-        flex-direction: column;
-    }
-
-    .TM1, .TM2 {
-       
-    //  padding-top: 30px;
-    //  margin: 0;
-    //  width: 100%;
-    //  //border-top: 2px double @ocean;
-    //  display: flex;
-    //  justify-content: space-between;
-         
-    // @media @phone {
-    //    display: flex;
-    //    flex-direction: column;
-    //    .phoneflex;
-    //  }
-        //    width: 45%;
-        //     margin-bottom: 30px;
-        //     @media @phone {
-        //       display: flex;
-        //       flex-direction: column;
-        //       .phoneflex;
-        //     }
-                         
-          
+     
+    .tmembers {
         
-
-
-        .flex-layout(row, center);
-        flex-direction: column;
-        margin-bottom: 30px;
-        width: 45%;
-          margin-bottom: 30px;
-          @media @phone {
-            display: flex;
+        .PM {
+            .flex-layout(center, center);
             flex-direction: column;
-            .phoneflex;
+            padding-bottom:20px;
         }
-    }
 
-        
+    .tmembers1 {
+        padding-top: 20px;
+        border-top: 2px double @ocean;
+        display: flex;
+        justify-content: space-around;
     
-    .TM3, .TM4 {
-        .flex-layout(center, center);
-        flex-direction: column;
-        margin-bottom: 30px;
-        width: 45%;
-        margin-bottom: 30px;
-          @media @phone {
+         @media @phone {
             display: flex;
             flex-direction: column;
             .phoneflex;
+          }
 
-    }
+          .tm1 {
+            .flex-layout(center, center);
+            flex-direction: column;
+            padding-bottom:20px;
+            width: 40%;
+            margin-bottom: 30px;
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                .phoneflex;
+            }
 
-    p {
-        .box-size(100%, 40%);
-        text-align: center;
-        margin-bottom: 30px;
-    }
-}
+        }   
+    }//tm1
+
+    .tmembers2 {
+        padding-top: 20px;
+        border-top: 2px double @ocean;
+        display: flex;
+        justify-content: space-around;
+    
+         @media @phone {
+            display: flex;
+            flex-direction: column;
+            .phoneflex;
+          }
+
+          .tm2 {
+            .flex-layout(center, center);
+            flex-direction: column;
+            padding-bottom:20px;
+            width: 40%;
+            margin-bottom: 30px;
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                .phoneflex;
+            }
+
+        } 
+}//tm2
+   
 } //tmembers
+} //about-ctn
 
 .contact {
-    .flex-layout(center, center);
-    flex-direction: column;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 1%;
+
     @media @phone {
     .flex-layout(center, center);
     flex-direction: column;
     .phoneflex;
     }
 }
-} //about-ctn
