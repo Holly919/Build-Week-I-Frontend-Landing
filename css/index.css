@@ -1,5 +1,5 @@
 .phoneflex {
-  width: 99%;
+  width: 97%;
   margin: 2%;
   padding: 1%;
 }
@@ -248,13 +248,12 @@ header .navigation nav a:hover {
   flex-direction: column;
   justify-content: center;
   width: 75%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px auto;
   text-align: center;
 }
 @media (max-width: 500px) {
   .container .top-content .intro {
-    width: 99%;
+    width: 97%;
     margin: 2%;
     padding: 1%;
   }
@@ -262,7 +261,7 @@ header .navigation nav a:hover {
 .container .sign-up-btn .btn {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin: 30px auto;
   width: 20%;
   border: 3px double #6BA8A9;
   padding: 10px;
@@ -274,33 +273,32 @@ header .navigation nav a:hover {
 }
 @media (max-width: 500px) {
   .container .sign-up-btn .btn {
-    display: flex;
-    flex-direction: column;
-    width: 99%;
+    width: 97%;
     margin: 2%;
     padding: 1%;
   }
 }
 .container .sign-up-btn .btn:hover {
-  background-color: #79BAC1;
+  background-color: #F1FCFC;
   color: #142850;
 }
 .container .CTA {
   background-color: #6BA8A9;
   padding-top: 30px 10px 20px 10px;
-  margin: 0;
+  margin: 10px auto;
   width: 95%;
   border-top: 2px double #79BAC1;
+  border-radius: 3px;
   display: flex;
   justify-content: space-around;
 }
 @media (max-width: 500px) {
   .container .CTA {
-    display: flex;
-    flex-direction: column;
-    width: 99%;
+    width: 97%;
     margin: 2%;
     padding: 1%;
+    display: flex;
+    flex-direction: column;
   }
 }
 .container .CTA h3 {
@@ -314,13 +312,13 @@ header .navigation nav a:hover {
   .container .CTA .get-inv {
     display: flex;
     flex-direction: column;
-    width: 99%;
+    width: 97%;
     margin: 2%;
     padding: 1%;
   }
 }
 .container .working-img {
-  margin-top: 0.5%;
+  margin: 1px;
 }
 .container .working-img .w-img {
   display: flex;
@@ -347,7 +345,6 @@ header .navigation nav a:hover {
 }
 .about-ctn .tmembers .tmembers1 {
   padding-top: 20px;
-  border-top: 2px double #79BAC1;
   display: flex;
   justify-content: space-around;
 }
@@ -355,7 +352,7 @@ header .navigation nav a:hover {
   .about-ctn .tmembers .tmembers1 {
     display: flex;
     flex-direction: column;
-    width: 99%;
+    width: 97%;
     margin: 2%;
     padding: 1%;
   }
@@ -373,14 +370,13 @@ header .navigation nav a:hover {
   .about-ctn .tmembers .tmembers1 .tm1 {
     display: flex;
     flex-direction: column;
-    width: 99%;
+    width: 97%;
     margin: 2%;
     padding: 1%;
   }
 }
 .about-ctn .tmembers .tmembers2 {
   padding-top: 20px;
-  border-top: 2px double #79BAC1;
   display: flex;
   justify-content: space-around;
 }
@@ -388,7 +384,7 @@ header .navigation nav a:hover {
   .about-ctn .tmembers .tmembers2 {
     display: flex;
     flex-direction: column;
-    width: 99%;
+    width: 97%;
     margin: 2%;
     padding: 1%;
   }
@@ -406,7 +402,7 @@ header .navigation nav a:hover {
   .about-ctn .tmembers .tmembers2 .tm2 {
     display: flex;
     flex-direction: column;
-    width: 99%;
+    width: 97%;
     margin: 2%;
     padding: 1%;
   }
@@ -421,7 +417,7 @@ header .navigation nav a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 99%;
+    width: 97%;
     margin: 2%;
     padding: 1%;
   }

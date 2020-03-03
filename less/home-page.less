@@ -17,8 +17,7 @@
      .intro {
         .setup-flex(column, center);
         width: 75%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin: 30px auto;
         text-align: center;
         @media @phone {
           .phoneflex;
@@ -31,7 +30,7 @@
         .btn {
             display: flex;
             justify-content: center;
-            margin-bottom: 30px;
+            margin: 30px auto;
             width: 20%;
             border: 3px double @seafoam;
             padding: 10px;
@@ -41,13 +40,11 @@
             text-align: center;
             background-color: @street-sign;
             @media @phone {
-                display: flex;
-                flex-direction: column;
                 .phoneflex;
               }
          }
           .btn:hover {
-            background-color: @ocean;
+            background-color: @pale-sky;
             color: @lake-blue;
           }
     } //sign-up-btn
@@ -57,16 +54,17 @@
       .CTA {
           background-color: @seafoam;
           padding-top: 30px 10px 20px 10px;
-          margin: 0;
+          margin: 10px auto;
           width: 95%;
           border-top: 2px double @ocean;
+          border-radius: 3px;
           display: flex;
           justify-content: space-around;
               
          @media @phone {
+            .phoneflex;
             display: flex;
             flex-direction: column;
-            .phoneflex;
           }
 
           h3 {
@@ -88,7 +86,7 @@
 
 
     .working-img {
-        margin-top: 0.5%;
+        margin: 1px;
 
         .w-img {
 
@@ -124,7 +122,7 @@
 
     .tmembers1 {
         padding-top: 20px;
-        border-top: 2px double @ocean;
+        //border-top: 2px double @ocean;
         display: flex;
         justify-content: space-around;
     
@@ -151,7 +149,7 @@
 
     .tmembers2 {
         padding-top: 20px;
-        border-top: 2px double @ocean;
+        //border-top: 2px double @ocean;
         display: flex;
         justify-content: space-around;
     
