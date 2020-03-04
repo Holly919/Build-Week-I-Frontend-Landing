@@ -267,6 +267,7 @@ header .navigation nav a:hover {
   border: 3px double #6BA8A9;
   padding: 10px;
   border-radius: 10px;
+  text-decoration: none;
   color: white;
   font-size: 3rem;
   text-align: center;
@@ -280,7 +281,7 @@ header .navigation nav a:hover {
   }
 }
 .container .sign-up-btn .btn:hover {
-  background-color: #F1FCFC;
+  background-color: #ff7a5c;
   color: #142850;
 }
 .container .CTA {
@@ -337,24 +338,17 @@ header .navigation nav a:hover {
     padding: auto;
   }
 }
-.about-ctn .tmembers h3,
-.about-ctn .tmembers h4 {
+.about-ctn h3,
+.about-ctn h4 {
   font-family: 'Laila';
 }
-.about-ctn .tmembers .PM {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 20px;
-}
-.about-ctn .tmembers .tmembers1 {
+.about-ctn .tmembers1 {
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
 }
 @media (max-width: 500px) {
-  .about-ctn .tmembers .tmembers1 {
+  .about-ctn .tmembers1 {
     display: flex;
     flex-direction: column;
     width: 97%;
@@ -362,7 +356,7 @@ header .navigation nav a:hover {
     padding: 1%;
   }
 }
-.about-ctn .tmembers .tmembers1 .tm1 {
+.about-ctn .tmembers1 .tm1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,7 +366,7 @@ header .navigation nav a:hover {
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
-  .about-ctn .tmembers .tmembers1 .tm1 {
+  .about-ctn .tmembers1 .tm1 {
     display: flex;
     flex-direction: column;
     width: 97%;
@@ -380,13 +374,13 @@ header .navigation nav a:hover {
     padding: 1%;
   }
 }
-.about-ctn .tmembers .tmembers2 {
+.about-ctn .tmembers2 {
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
 }
 @media (max-width: 500px) {
-  .about-ctn .tmembers .tmembers2 {
+  .about-ctn .tmembers2 {
     display: flex;
     flex-direction: column;
     width: 97%;
@@ -394,7 +388,7 @@ header .navigation nav a:hover {
     padding: 1%;
   }
 }
-.about-ctn .tmembers .tmembers2 .tm2 {
+.about-ctn .tmembers2 .tm2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,13 +398,20 @@ header .navigation nav a:hover {
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
-  .about-ctn .tmembers .tmembers2 .tm2 {
+  .about-ctn .tmembers2 .tm2 {
     display: flex;
     flex-direction: column;
     width: 97%;
     margin: 2%;
     padding: 1%;
   }
+}
+.about-ctn .pmanager .PM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 .contact {
   border-top: 2px double #F1FCFC;
