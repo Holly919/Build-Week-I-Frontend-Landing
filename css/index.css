@@ -180,7 +180,7 @@ header {
   align-items: center;
   flex-direction: column;
   align-content: space-around;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   width: 100%;
   border-bottom: 2px double #F1FCFC;
 }
@@ -281,8 +281,8 @@ header .navigation nav a:hover {
   }
 }
 .container .sign-up-btn .btn:hover {
-  background-color: #ff7a5c;
-  color: #142850;
+  background-color: #ed3833;
+  color: #F1FCFC;
 }
 .container .CTA {
   background-color: #6BA8A9;
