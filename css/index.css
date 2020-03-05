@@ -183,6 +183,10 @@ header {
   margin-bottom: 5px;
   width: 100%;
   border-bottom: 2px double #F1FCFC;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color: #d9e6f2;
 }
 @media (max-width: 500px) {
   header {
@@ -236,11 +240,12 @@ header .navigation nav a:hover {
 .container .top-content .top-image {
   width: 100%;
   border-radius: 10px;
+  margin-top: 55px;
 }
 @media (max-width: 500px) {
   .container .top-content .top-image {
     width: 100%;
-    margin: auto;
+    margin: 50px auto auto;
     padding: auto;
   }
 }
@@ -343,6 +348,7 @@ header .navigation nav a:hover {
   font-family: 'Laila';
 }
 .about-ctn .tmembers1 {
+  margin-top: 100px;
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
@@ -351,8 +357,8 @@ header .navigation nav a:hover {
   .about-ctn .tmembers1 {
     display: flex;
     flex-direction: column;
+    margin-top: 200px;
     width: 97%;
-    margin: 2%;
     padding: 1%;
   }
 }
