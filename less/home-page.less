@@ -1,0 +1,210 @@
+.container {
+    
+    .top-content {
+        // display: flex;
+        // flex-direction: column;
+                 
+        .top-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 55px;
+            @media @phone {
+                width: 100%;
+                margin: 50px auto auto;
+                padding: auto;
+        }
+    }
+    
+     .intro {
+        .setup-flex(column, center);
+        width: 75%;
+        margin: 30px auto;
+        text-align: center;
+        @media @phone {
+          .phoneflex;
+        }
+    } //intro 
+    } //top-content
+
+    .sign-up-btn {
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+            width: 20%;
+            border: 3px double @seafoam;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            background-color: @street-sign;
+            @media @phone {
+                .phoneflex;
+              }
+         }
+          .btn:hover {
+            background-color: @sherbet;
+            color: @pale-sky;
+          }
+    } //sign-up-btn
+
+    
+
+      .CTA {
+          background-color: @seafoam;
+          padding-top: 30px 10px 20px 10px;
+          margin: 10px auto;
+          width: 95%;
+          border-top: 2px double @ocean;
+          border-radius: 3px;
+          display: flex;
+          justify-content: space-around;
+              
+         @media @phone {
+            .phoneflex;
+            display: flex;
+            flex-direction: column;
+          }
+
+          h3 {
+              text-align: center;
+          }
+    
+        .get-inv {
+          width: 30%;
+          margin: 20px;
+          @media @phone {
+            display: flex;
+            flex-direction: column;
+            .phoneflex;
+          }
+        }
+    } //CTA
+
+    
+
+
+    .working-img {
+        margin: 0 0 5px;
+
+        .w-img {
+
+            display: flex;
+            justify-content: center;
+            
+      
+          .working-img {
+              padding: 0;
+              width: 50%;
+              border-radius: 10px;
+              @media @phone {
+                  width: 100%;
+                  margin: auto;
+                  padding: auto;
+              }
+        }  
+      } 
+    } //working-img
+
+    }//container
+
+
+.about-ctn {
+
+    //.tmembers {
+        
+        h3, h4{
+            font-family: @h12-font;
+        }
+       
+
+    .tmembers1 {
+        margin-top: 100px;
+        padding-top: 20px;
+        //border-top: 2px double @ocean;
+        display: flex;
+        justify-content: space-around;
+         @media @phone {
+            display: flex;
+            flex-direction: column;
+            margin-top: 200px;
+            width: 97%;
+            padding: 1%;
+            
+          }
+
+          .tm1 {
+            .flex-layout(center, center);
+            flex-direction: column;
+            padding-bottom:20px;
+            width: 40%;
+            margin-bottom: 30px;
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                .phoneflex;
+            }
+
+        }   
+    } //tm1
+
+    .tmembers2 {
+        padding-top: 20px;
+        //border-top: 2px double @ocean;
+        display: flex;
+        justify-content: space-around;
+    
+         @media @phone {
+            display: flex;
+            flex-direction: column;
+            .phoneflex;
+          }
+
+          .tm2 {
+            .flex-layout(center, center);
+            flex-direction: column;
+            padding-bottom:20px;
+            width: 40%;
+            margin-bottom: 30px;
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                .phoneflex;
+            }
+
+        } 
+} //tm2
+
+.pmanager{
+            
+    .PM {
+        .flex-layout(center, center);
+        flex-direction: column;
+        padding-bottom:20px;
+    }
+
+}
+
+    
+} //about-ctn
+
+
+.contact {
+    border-top: 2px double @pale-sky;
+    background-color: @lake-blue;
+    text-align: center;
+    padding-top: 10px;
+    margin: 15px 0;
+
+    @media @phone {
+    .flex-layout(center, center);
+    flex-direction: column;
+    .phoneflex;
+    }
+    p, h4 {
+        color: white;
+       }
+} //contact
